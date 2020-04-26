@@ -1,0 +1,26 @@
+body{
+    background: #000000 ;
+}
+h2{
+    color: #ffff00 ;
+    border: solid 2px yellow;
+    padding: 10px;
+    font-size: 4em;
+}
+label{
+    color: #000000 ;
+}
+#divForm label{
+    font-size: 2em;
+}
+#divForm {
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 20px 20px 20px 20px;
+}
+input{
+    background: #ffffff
+}
+input[type="text"]{
+    background: #ffffff
+}
