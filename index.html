@@ -1,0 +1,60 @@
+<html>
+    <head><meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Formulários</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css" />  
+    <body>
+        <h2>CADASTRO</h2>
+        <div id="divForm">
+            
+            <form method="GET" action=" salvar.php" onsubmit="return validar()"
+                  enctype="multipart/form-data">
+            <label> Nome: </label> <br>
+        <input type="text"  name="txtNome" id="txtName"
+               placeholder="Digite aqui o nome do produto"  size="40" /> <br><br>
+        
+        <label for="txtvalor"> Preço: </label> <br>
+        <input type="number" min="0.01" name="txtValor" id="txtValor"
+               placeholder="Digite aqui o preço do produto" size="40" /><br><br>
+       
+        <label for="txtquantidade">Quantidade: </label> <br>
+        <input type="number" min="1" name="txtQuantidade" id="txtQuantidade"
+               placeholder="Digite aqui a quantidade do produto" size="40" /><br><br>
+      
+        <label for="txtdata"> Data de Validade </label> <br>
+        <input type="date" min="2020-05-04" step="any" name="txtdata" id="txtData"
+               placeholder="Digite aqui a data de validade do produto" size="30"/><br><br>
+              
+             <label for="txtSelect"> Categorias </label>
+             <select id="lista" >
+            <option value="0">Selecione...</option>
+            <optgroup label="Eletronica"></optgroup>
+            <option value="Smartphone">Smartphones</option>
+            <option value="Notebook">Notebooks</option>
+            <option value="Consoles">Consoles</option>
+            <option value="Acessórios">Acessórios</option>
+             <optgroup label="Casa"></optgroup>
+            <option value="Eletrodomesticos">Eletrodomesticos</option>
+            <option value="Decorção">Decoração</option>
+            <option value="Mobilia">Mobilia</option>
+            <optgroup label="Alimentos"></optgroup>
+            <option value="Doces">Doces</option>
+            <option value="Salgados">Salgados</option>
+            <option value="Sgluten">Sem Glúten</option>
+            <option value="Vegetariano">Vegetariano</option>
+             </select> <br> <br>
+             
+         <label for="foto">Foto: </label> 
+         <input type="file" name="foto" id="foto" /> <br><br>
+         
+
+        <input type="submit" value="Salvar"/>
+            </form>
+    
+    </div>
+        
+       
+            <script src="javascript.js"> </script>
+    </body>
+</html>
