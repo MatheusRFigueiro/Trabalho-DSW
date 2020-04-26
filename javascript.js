@@ -10,6 +10,7 @@ function validar(){
     var v5 = document.getElementById("lista");
     var lista = v5.value;
     var v6 = document.getElementById("foto");
+    var foto = v6.value;
    
     if( nome.length<=1 ){
         alert("Campo 'Nome' Inválido");
@@ -23,10 +24,10 @@ function validar(){
     }else if(data.length<=0 ){
         alert("Campo 'Data de Validade' Inválido");
         return false;
-    }else if(lista==0){
+    }else if(lista==""){
         alert("Selecione a categoria");
         return false;
-    }else if(foto==0){
+    }else if(foto==""){
         alert("Insira uma imagem");
         return false;
     }else{
